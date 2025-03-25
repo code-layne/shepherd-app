@@ -1,90 +1,37 @@
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>shepherd::math</title>
-    <link rel="icon" type="image/x-icon" href="/html/favicon.ico"/>
-    <link rel="stylesheet" href="/html/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>    
-  </head>
-  <body class="d-flex flex-column h-100">
-    <header>
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="/html/index.html">shepherd::math</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">::algebra1</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/html/algebra2/index.html">::algebra2</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">::utilities</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
-      
-      <!-- Begin page content -->
-      <main class="flex-shrink-0">
-        <div class="container">
-          <h1 class="mt-5">shepherd::math</h1>
-          <p class="lead">welcome to algebra &#x1F913;</p>
-          <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6 bg-light border">
-                  <h5 class="text-center">::algebra1</h5>
-                  <ul>
-                    <li>syllabus</li>
-                    <li>unit 0: translating/evaluating expressions</li>
-                    <li>unit 1: radicals and exponents</li>
-                    <li>unit 2: linear equations/inequalities</li>
-                    <li>unit 3: linear functions</li>
-                    <li>unit 4: systems of linear equations/inequalities</li>
-                    <li>unit 5: polynomials</li>
-                    <li>unit 6: statistics</li>
-                  </ul>
-              </div>
-                <div class="col-md-6 bg-light border">
-                  <h5 class="text-center">::algebra2</h5>
-                  <ul>
-                    <li><a href="/html/algebra2/index.html">syllabus</a></li>
-                    <li>unit 0: foundations</li>
-                    <li>unit 1: function analysis</li>
-                    <li>unit 2: quadratic functions</li>
-                    <li>unit 3: polynomial functions</li>
-                    <li>unit 4: radical functions</li>
-                    <li>unit 5: rational functions</li>
-                    <li>unit 6: statistics</li>
-                  </ul>
-              </div>
-            </div>
-        </div>
-      </main>
-      
-      <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-          <span class="text-muted">&copy; 2025 Shepherd</span>
-        </div>
-      </footer>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </body>
-</html>
+{{template "layout.html" .}}
+
+{{define "title"}}{{end}}
+
+{{define "blurb"}}welcome to algebra{{end}}
+
+{{define "content"}}
+<div class="row">
+    <div class="col-md-6 bg-light border">
+      <h5 class="text-center">::algebra1</h5>
+      <ul>
+        <li>syllabus</li>
+        <li>unit 0: translating/evaluating expressions</li>
+        <li>unit 1: radicals and exponents</li>
+        <li>unit 2: linear equations/inequalities</li>
+        <li>unit 3: linear functions</li>
+        <li>unit 4: systems of linear equations/inequalities</li>
+        <li>unit 5: polynomials</li>
+        <li>unit 6: statistics</li>
+      </ul>
+  </div>
+    <div class="col-md-6 bg-light border">
+      <h5 class="text-center">::algebra2</h5>
+      <ul>
+        <li><a href="/algebra2">syllabus</a></li>
+        <li><a href="/algebra2/unit0">unit 0: foundations</a></li>
+        <li><a href="/algebra2/unit1">unit 1: function analysis</a></li>
+        <li>unit 2: quadratic functions</li>
+        <li>unit 3: polynomial functions</li>
+        <li>unit 4: radical functions</li>
+        <li>unit 5: rational functions</li>
+        <li>unit 6: statistics</li>
+      </ul>
+  </div>
+</div>
+{{end}}
