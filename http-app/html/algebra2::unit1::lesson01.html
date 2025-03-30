@@ -1,163 +1,170 @@
 <!doctype html>
 <html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>shepherd::algebra::algebra2::unit1::lesson1</title>
-    <link rel="icon" type="image/x-icon" href="/html/favicon.ico"/>
-    <link rel="stylesheet" href="/html/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script type="text/x-mathjax-config">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>shepherd::algebra::algebra2::unit1::lesson1</title>
+  <link rel="icon" type="image/x-icon" href="/html/favicon.ico" />
+  <link rel="stylesheet" href="/html/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script type="text/x-mathjax-config">
       MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>    
-  </head>
-  <body class="d-flex flex-column h-100">
-    <header>
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="/html/index.html">shepherd::math</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">::algebra1</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/html/algebra2/index.html">::algebra2</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">::utilities</a>
-                </li>
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/html/index.html">shepherd::math</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">::algebra1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/algebra2/index.html">::algebra2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">::utilities</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h1 class="mt-5">shepherd::algebra::algebra2::unit1::lesson1</h1>
+      <p class="lead">absolute value functions, equations, inequalities</p>
+      <div class="container mt-5">
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">::info</h5>
+              <p class="card-text">
+              <ul>
+                <li>standard(s)</li>
+                <li>learning target(s)</li>
+                <li>essential question</li>
+                <li>success criteria</li>
+                <li>HQIM reference</li>
               </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+              </p>
+              <p class="card-text"><small class="text-muted">show ::info</small></p>
             </div>
           </div>
-        </nav>
-      </header>
-      
-      <!-- Begin page content -->
-      <main class="flex-shrink-0">
-        <div class="container">
-            <h1 class="mt-5">shepherd::algebra::algebra2::unit1::lesson1</h1>
-            <p class="lead">absolute value functions, equations, inequalities</p>
-            <div class="container mt-5">
-            <div class="card-deck">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">::info</h5>
-                  <p class="card-text">
-                      <ul>
-                          <li>standard(s)</li>
-                          <li>learning target(s)</li>
-                          <li>essential question</li>
-                          <li>success criteria</li>
-                          <li>HQIM reference</li>
-                      </ul>
-                  </p>
-                  <p class="card-text"><small class="text-muted">show ::info</small></p>
-                </div>
-              </div>
-              <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">::warmup</h5>
-                    <p class="card-text">
-                        <ul>
-                          <li>QOD - DOK 2 or greater</li>
-                          <li>number sense routine</li>
-                          <li>red standard spiral review</li>
-                        </ul>
-                    </p>
-                    <p class="card-text"><small class="text-muted">show ::warmup</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">::hook</h5>
-                    <p class="card-text">
-                        <ul>
-                          <li>skill refresher</li>
-                          <li>topic intro</li>
-                        </ul>
-                    </p>
-                    <p class="card-text"><small class="text-muted">show ::warmup</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">::instruct</h5>
-                    <p class="card-text">
-                      <ul>
-                        <li>demonstrate graphing absolute value functions</li>
-                        <li>demonstrate identifying characteristics of the function from its graph</li>
-                        <ul>
-                          <li>domain/range</li>
-                          <li>zeros/intercepts</li>
-                          <li>continuity/discontinuity</li>
-                        </ul>
-                        <li>demonstrate solving absolute value equations/inequalities algebraically and graphically</li>
-                        <li>demonstrate finding exact solutions by converting the equation into a function</li>
-                        <li>demonstrate solving problems in context including using the UPS Check heuristic</li>
-                    </ul>
-                </p>
-                    <p class="card-text"><small class="text-muted">show ::instruct</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">::monitor</h5>
-                    <p class="card-text">
-                    <ul>
-                        <li>2-4 monitoring questions</li>
-                        <li>lap breakdown for each question</li>
-                        <li>possible misconceptions</li>
-                    </ul>
-                    </p>
-                    <p class="card-text"><small class="text-muted">show ::monitor</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">::practice</h5>
-                      <p class="card-text">
-                        <ul>
-                          <li>stations with DOK 2 questions or above</li>
-                          <li>homework assignment</li>
-                          <li>enrichment</li>
-                        </ul>
-                      </p>
-                      <p class="card-text"><small class="text-muted">show ::practice</small></p>
-                    </div>
-                  </div>
-                </div>    
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">::assess</h5>
-                    <p class="card-text">
-                      <ul>
-                        <li>exit ticket/lesson quiz</li>
-                      </ul>
-                    </p>
-                    <p class="card-text"><small class="text-muted">show ::practice</small></p>
-                  </div>
-                </div>
-              </div>    
-           </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">::warmup</h5>
+              <p class="card-text">
+              <ul>
+                <li>QOD - DOK 2 or greater</li>
+                <li>number sense routine</li>
+                <li>red standard spiral review</li>
+              </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">show ::warmup</small></p>
+            </div>
           </div>
-      </main>
-      
-      <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-          <span class="text-muted">&copy; 2025 Shepherd</span>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">::hook</h5>
+              <p class="card-text">
+              <ul>
+                <li>skill refresher</li>
+                <li>topic intro</li>
+              </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">show ::warmup</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">::instruct</h5>
+              <p class="card-text">
+              <ul>
+                <li>demonstrate graphing absolute value functions</li>
+                <li>demonstrate identifying characteristics of the function from its graph</li>
+                <ul>
+                  <li>domain/range</li>
+                  <li>zeros/intercepts</li>
+                  <li>continuity/discontinuity</li>
+                </ul>
+                <li>demonstrate solving absolute value equations/inequalities algebraically and graphically</li>
+                <li>demonstrate finding exact solutions by converting the equation into a function</li>
+                <li>demonstrate solving problems in context including using the UPS Check heuristic</li>
+              </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">show ::instruct</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">::monitor</h5>
+              <p class="card-text">
+              <ul>
+                <li>2-4 monitoring questions</li>
+                <li>lap breakdown for each question</li>
+                <li>possible misconceptions</li>
+              </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">show ::monitor</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">::practice</h5>
+              <p class="card-text">
+              <ul>
+                <li>stations with DOK 2 questions or above</li>
+                <li>homework assignment</li>
+                <li>enrichment</li>
+              </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">show ::practice</small></p>
+            </div>
+          </div>
         </div>
-      </footer>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">::assess</h5>
+            <p class="card-text">
+            <ul>
+              <li>exit ticket/lesson quiz</li>
+            </ul>
+            </p>
+            <p class="card-text"><small class="text-muted">show ::practice</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </body>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">&copy; 2025 Shepherd</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
 </html>
